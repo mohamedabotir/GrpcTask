@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+option csharp_namespace = "web.server1";
+// The greeting service definition.
+service Inventory {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply);
+  rpc pushProduct(Product) returns (Response);
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+}
+
+// The response message containing the greetings.
+message HelloReply {
+  string message = 1;
+}
+message Product{
+  string product=1;
+  double quantity=2;
+  double price=3;
+}
+message Response{
+  bool status=1;
+}
