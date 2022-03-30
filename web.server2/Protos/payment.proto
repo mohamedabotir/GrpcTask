@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "web.server2";
+
+package payment;
+
+// The greeting service definition.
+service PaymentService {
+  
+  rpc PaymentGateWaye(PaymentRequest) returns (PaymentResponse); 
+}
+
+message PaymentRequest{
+	string username=1;
+	double totalPrice=2;
+}
+message PaymentResponse{
+	bool success=1;
+}

@@ -27,3 +27,32 @@ C:\taskGrpc\client\obj\Debug\net6.0\client.dll
 C:\taskGrpc\client\obj\Debug\net6.0\ref\client.dll
 C:\taskGrpc\client\obj\Debug\net6.0\client.pdb
 C:\taskGrpc\client\obj\Debug\net6.0\client.genruntimeconfig.cache
+D:\IT\.NET\grpc Course\GrpcTask\client\bin\Debug\net6.0\appsettings.Development.json
+D:\IT\.NET\grpc Course\GrpcTask\client\bin\Debug\net6.0\appsettings.json
+D:\IT\.NET\grpc Course\GrpcTask\client\bin\Debug\net6.0\client.exe
+D:\IT\.NET\grpc Course\GrpcTask\client\bin\Debug\net6.0\client.deps.json
+D:\IT\.NET\grpc Course\GrpcTask\client\bin\Debug\net6.0\client.runtimeconfig.json
+D:\IT\.NET\grpc Course\GrpcTask\client\bin\Debug\net6.0\client.dll
+D:\IT\.NET\grpc Course\GrpcTask\client\bin\Debug\net6.0\client.pdb
+D:\IT\.NET\grpc Course\GrpcTask\client\bin\Debug\net6.0\Google.Protobuf.dll
+D:\IT\.NET\grpc Course\GrpcTask\client\bin\Debug\net6.0\Grpc.AspNetCore.Server.dll
+D:\IT\.NET\grpc Course\GrpcTask\client\bin\Debug\net6.0\Grpc.AspNetCore.Server.ClientFactory.dll
+D:\IT\.NET\grpc Course\GrpcTask\client\bin\Debug\net6.0\Grpc.Core.Api.dll
+D:\IT\.NET\grpc Course\GrpcTask\client\bin\Debug\net6.0\Grpc.Net.Client.dll
+D:\IT\.NET\grpc Course\GrpcTask\client\bin\Debug\net6.0\Grpc.Net.ClientFactory.dll
+D:\IT\.NET\grpc Course\GrpcTask\client\bin\Debug\net6.0\Grpc.Net.Common.dll
+D:\IT\.NET\grpc Course\GrpcTask\client\obj\Debug\net6.0\client.csproj.AssemblyReference.cache
+D:\IT\.NET\grpc Course\GrpcTask\client\obj\Debug\net6.0\client.GeneratedMSBuildEditorConfig.editorconfig
+D:\IT\.NET\grpc Course\GrpcTask\client\obj\Debug\net6.0\client.AssemblyInfoInputs.cache
+D:\IT\.NET\grpc Course\GrpcTask\client\obj\Debug\net6.0\client.AssemblyInfo.cs
+D:\IT\.NET\grpc Course\GrpcTask\client\obj\Debug\net6.0\client.csproj.CoreCompileInputs.cache
+D:\IT\.NET\grpc Course\GrpcTask\client\obj\Debug\net6.0\client.MvcApplicationPartsAssemblyInfo.cache
+D:\IT\.NET\grpc Course\GrpcTask\client\obj\Debug\net6.0\staticwebassets.build.json
+D:\IT\.NET\grpc Course\GrpcTask\client\obj\Debug\net6.0\staticwebassets.development.json
+D:\IT\.NET\grpc Course\GrpcTask\client\obj\Debug\net6.0\scopedcss\bundle\client.styles.css
+D:\IT\.NET\grpc Course\GrpcTask\client\obj\Debug\net6.0\client.csproj.CopyComplete
+D:\IT\.NET\grpc Course\GrpcTask\client\obj\Debug\net6.0\client.dll
+D:\IT\.NET\grpc Course\GrpcTask\client\obj\Debug\net6.0\refint\client.dll
+D:\IT\.NET\grpc Course\GrpcTask\client\obj\Debug\net6.0\client.pdb
+D:\IT\.NET\grpc Course\GrpcTask\client\obj\Debug\net6.0\client.genruntimeconfig.cache
+D:\IT\.NET\grpc Course\GrpcTask\client\obj\Debug\net6.0\ref\client.dll

@@ -26,19 +26,22 @@ public class InventoryService:Inventory.InventoryBase
       {
           Product product;
           bool isMatch=false;
+          double totalPrice = 0.0;
           foreach(var item in Data){
           if(request.Product_ == item.Product_)
            {
                if(request.Quantity<= item.Quantity){
                    isMatch=true;
                   product = item;
+                  totalPrice = request.Quantity * item.Price;
                   _logger.LogInformation($"Product can be sell:{product.Product_} with price:{product.Price}");
                   break;
                }
            }
           }
         return Task.FromResult(new Response{
-            Status=isMatch
+            Status=isMatch,
+            TotalPrice = totalPrice
         });
       }
 }

@@ -27,17 +27,17 @@ namespace client {
             "ChZQcm90b3MvaW52ZW50b3J5LnByb3RvIhwKDEhlbGxvUmVxdWVzdBIMCgRu",
             "YW1lGAEgASgJIh0KCkhlbGxvUmVwbHkSDwoHbWVzc2FnZRgBIAEoCSI7CgdQ",
             "cm9kdWN0Eg8KB3Byb2R1Y3QYASABKAkSEAoIcXVhbnRpdHkYAiABKAESDQoF",
-            "cHJpY2UYAyABKAEiGgoIUmVzcG9uc2USDgoGc3RhdHVzGAEgASgIMlcKCUlu",
-            "dmVudG9yeRImCghTYXlIZWxsbxINLkhlbGxvUmVxdWVzdBoLLkhlbGxvUmVw",
-            "bHkSIgoLcHVzaFByb2R1Y3QSCC5Qcm9kdWN0GgkuUmVzcG9uc2VCCaoCBmNs",
-            "aWVudGIGcHJvdG8z"));
+            "cHJpY2UYAyABKAEiLgoIUmVzcG9uc2USDgoGc3RhdHVzGAEgASgIEhIKCnRv",
+            "dGFsUHJpY2UYAiABKAEyVwoJSW52ZW50b3J5EiYKCFNheUhlbGxvEg0uSGVs",
+            "bG9SZXF1ZXN0GgsuSGVsbG9SZXBseRIiCgtwdXNoUHJvZHVjdBIILlByb2R1",
+            "Y3QaCS5SZXNwb25zZUIJqgIGY2xpZW50YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::client.HelloRequest), global::client.HelloRequest.Parser, new[]{ "Name" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::client.HelloReply), global::client.HelloReply.Parser, new[]{ "Message" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::client.Product), global::client.Product.Parser, new[]{ "Product_", "Quantity", "Price" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::client.Response), global::client.Response.Parser, new[]{ "Status" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::client.Response), global::client.Response.Parser, new[]{ "Status", "TotalPrice" }, null, null, null, null)
           }));
     }
     #endregion
@@ -668,6 +668,7 @@ namespace client {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public Response(Response other) : this() {
       status_ = other.status_;
+      totalPrice_ = other.totalPrice_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -687,6 +688,17 @@ namespace client {
       }
     }
 
+    /// <summary>Field number for the "totalPrice" field.</summary>
+    public const int TotalPriceFieldNumber = 2;
+    private double totalPrice_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public double TotalPrice {
+      get { return totalPrice_; }
+      set {
+        totalPrice_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as Response);
@@ -701,6 +713,7 @@ namespace client {
         return true;
       }
       if (Status != other.Status) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.Equals(TotalPrice, other.TotalPrice)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -708,6 +721,7 @@ namespace client {
     public override int GetHashCode() {
       int hash = 1;
       if (Status != false) hash ^= Status.GetHashCode();
+      if (TotalPrice != 0D) hash ^= pbc::ProtobufEqualityComparers.BitwiseDoubleEqualityComparer.GetHashCode(TotalPrice);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -728,6 +742,10 @@ namespace client {
         output.WriteRawTag(8);
         output.WriteBool(Status);
       }
+      if (TotalPrice != 0D) {
+        output.WriteRawTag(17);
+        output.WriteDouble(TotalPrice);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -741,6 +759,10 @@ namespace client {
         output.WriteRawTag(8);
         output.WriteBool(Status);
       }
+      if (TotalPrice != 0D) {
+        output.WriteRawTag(17);
+        output.WriteDouble(TotalPrice);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -752,6 +774,9 @@ namespace client {
       int size = 0;
       if (Status != false) {
         size += 1 + 1;
+      }
+      if (TotalPrice != 0D) {
+        size += 1 + 8;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -766,6 +791,9 @@ namespace client {
       }
       if (other.Status != false) {
         Status = other.Status;
+      }
+      if (other.TotalPrice != 0D) {
+        TotalPrice = other.TotalPrice;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -785,6 +813,10 @@ namespace client {
             Status = input.ReadBool();
             break;
           }
+          case 17: {
+            TotalPrice = input.ReadDouble();
+            break;
+          }
         }
       }
     #endif
@@ -801,6 +833,10 @@ namespace client {
             break;
           case 8: {
             Status = input.ReadBool();
+            break;
+          }
+          case 17: {
+            TotalPrice = input.ReadDouble();
             break;
           }
         }
